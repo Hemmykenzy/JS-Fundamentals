@@ -1,9 +1,6 @@
-const args = process.argv.length;
-
-if (args <= 2) {
+const arg = process.argv[2];
+if (arg === undefined) {
   console.log("No argument");
-} else if (args === 3) {
-  console.log("Argument found");
 } else {
-  console.log("Arguments found");
+  console.log(arg);
 }
